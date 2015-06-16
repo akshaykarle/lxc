@@ -162,6 +162,8 @@ EOF
         rm -f $rootfs/usr/sbin/policy-rc.d
     fi
 
+    chroot $rootfs apt-get update
+    chroot $rootfs apt-get install -y curl
     chroot $rootfs curl --location --fail https://www.opscode.com/chef/install.sh | bash -s -- -v 11
     chroot $rootfs mkdir -p /var/chef-solo
     ln -sf /go-saas-src/go-saas-chef $rootfs/var/chef-solo
