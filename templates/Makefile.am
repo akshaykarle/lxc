@@ -17,4 +17,5 @@ templates_SCRIPTS = \
 	lxc-plamo \
 	lxc-sshd \
 	lxc-ubuntu \
-	lxc-ubuntu-cloud
+	lxc-ubuntu-cloud \
+	lxc-snap

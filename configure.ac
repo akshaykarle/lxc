@@ -770,6 +770,7 @@ AC_CONFIG_FILES([
 	templates/lxc-sshd
 	templates/lxc-ubuntu
 	templates/lxc-ubuntu-cloud
+	templates/lxc-snap
 
 	src/Makefile
 	src/lxc/Makefile
